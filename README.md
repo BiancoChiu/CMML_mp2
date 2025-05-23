@@ -29,3 +29,9 @@ To run CARD:
 
 ## Environment
 Details of package versions can be found in `env_info_python.txt` and `env_info_R.txt`.
+
+## Results
+All output results are in `results` directory
+
+## Figures
+All figures and code to generate them are in `code/` directory.

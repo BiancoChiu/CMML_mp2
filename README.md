@@ -1,37 +1,42 @@
 # CMML_mp2
 ## Data
-The original data can be downloaded from [here](https://drive.google.com/drive/folders/1pHmE9cg_tMcouV1LFJFtbyBJNp7oQo9J), located in the `SimulatedDataUpload/dataset1` directory.
+
+The original dataset is available [here](https://drive.google.com/drive/folders/1pHmE9cg_tMcouV1LFJFtbyBJNp7oQo9J) in the `SimulatedDataUpload/dataset1` directory.
 
 ## Pipeline
-All pipeline code is located in the `code/` directory.
 
-To run Tangram:
+All pipeline scripts are located in the `code/` directory.
+
+**To run Tangram:**
 ```
 python Tangram_pipeline.py \
     <single-cell reference h5> \
     <spatial h5> \
-    <the obs name of celltype> \
+    <celltype obs name> \
     <output_path>
 ```
 
-To run Cell2location:
+**To run Cell2location:**
 ```
 python Cell2location_pipeline.py \
     <single-cell reference h5> \
     <spatial h5> \
-    <the obs name of celltype> \
+    <celltype obs name> \
     <output_path>
 ```
 
-To run CARD:
-- First, use the `format_card_data.ipynb` notebook to generate data for CARD from your single-cell reference h5 and spatial h5 files.
-- Then, run `card_pipeline.R`.
+**To run CARD:**
+1. Use the `format_card_data.ipynb` notebook to prepare CARD input data from your single-cell and spatial h5 files.
+2. Execute `card_pipeline.R` to run the analysis.
 
 ## Environment
-Details of package versions can be found in `env_info_python.txt` and `env_info_R.txt`.
+
+Package versions and environment details are provided in `env_info_python.txt` and `env_info_R.txt`.
 
 ## Results
-All output results are in `results` directory
+
+All output files are saved in the `results/` directory.
 
 ## Figures
-All figures and code to generate them are in `code/` directory.
+
+Figures and the code used to generate them are available in the `code/` directory.
